@@ -1,0 +1,158 @@
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-blue {
+  color: #0088ff;
+}
+
+.text-danger {
+  color: #f05259;
+}
+.content-wrap {
+  min-height: calc(100vh - 130px);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+// 详情页通用样式
+.page-container {
+  background: #fff;
+  border-radius: 8px;
+  padding: 32px 40px;
+  margin-bottom: 60px;
+  .content-wrap {
+    min-height: calc(100vh - 250px);
+  }
+}
+
+.set_btn {
+  //返回按钮
+  margin-top: 60px;
+  text-align: center;
+
+  &.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 200px;
+    right: 0;
+    margin: 0;
+    z-index: 100;
+    padding: 14px;
+    text-align: center;
+    background: #fff;
+    border-top: 1px solid #ebeef5;
+  }
+
+  .el-button {
+    padding: 12px 65px;
+  }
+}
+
+.my-table {
+  .el-table {
+    border-radius: 8px;
+    border: 1px solid #ebeef5;
+
+    .el-table__header-wrapper {
+      height: 40px;
+
+      .el-table__header {
+        margin-top: 0;
+
+        .has-gutter {
+          tr {
+            height: 40px !important;
+
+            th {
+              padding: 0;
+              background: #f5f7fa;
+              border-left: 1px solid #ebeef5;
+              border-right: 1px solid #ebeef5;
+
+              .cell {
+                font-size: 14px;
+                font-weight: bold;
+                color: #606266;
+                line-height: 20px;
+              }
+            }
+
+            th:first-child {
+              border-left: none;
+            }
+
+            th:nth-last-child(2) {
+              border-right: none;
+            }
+          }
+        }
+      }
+    }
+
+    .el-table__body {
+      margin-top: 0;
+
+      td {
+        border: none;
+      }
+    }
+
+    .el-table__body-wrapper {
+      table {
+        border: none;
+        margin-bottom: 0;
+      }
+
+      .el-table__row {
+        height: 56px !important;
+        border: 1px solid #ebeef5;
+
+        td {
+          border-right: 1px solid #ebeef5;
+          border-bottom: 1px solid #ebeef5;
+        }
+
+        td:first-child {
+          border-left: none;
+        }
+
+        td:last-child {
+          border-right: none;
+        }
+      }
+
+      .el-table__row:first-child {
+        td {
+          border-top: none;
+        }
+      }
+
+      .el-table__row:last-child {
+        td {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  .el-table--border::after {
+    background-color: transparent;
+  }
+
+  .el-table::before {
+    background-color: transparent;
+  }
+}

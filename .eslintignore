@@ -1,0 +1,14 @@
+public
+node_modules
+.history
+.husky
+dist
+*.d.ts
+.prettierrc.js
+babel.config.js
+commitlint.config.js
+.stylelintrc.js
+package.json
+lint-staged.config
+.prettierrc.js
+# 可以将静态问题添加到这里，表示eslint跳过校验， 比如图片文件夹
